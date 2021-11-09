@@ -221,7 +221,7 @@
             }
             console.log(parm);
             //发送请求到后端
-            http.post("/login.do？method=login", parm, function (data) {
+            http.post("/login.do?method=login", parm, function (data) {
                 console.log(data)
                 if (data && data.code == 200) {//如果返回成功，跳转到首页
                     window.location = "/login.do?method=" + "adminHomeUI"
